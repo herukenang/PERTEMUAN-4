@@ -1,0 +1,22 @@
+<!DOCTYPE HTML">
+<html>
+    <head>
+        <title>PERKALIAN PANJANG x LEBAR</title>
+        <script type="text/javascript">
+            function hitungLuas(){
+                panjang = document.getElementById("txtPanjang").value;
+                lebar = document.getElementById("txtLebar").value;
+                Luas = panjang * lebar;
+                document.getElementById("txtLuas").value =  Luas;
+
+            }
+        </script>
+    </head>
+    <body>
+        PERKALIAN PANJANG x LEBAR<p/>
+        Panjang : <input type="text" id="txtPanjang" name="txtPanjang"><p/>
+        Lebar   : <input type="text" id="txtLebar" name="txtLebar"><p/>
+                  <input type="button" id="btnHitung" value="Hitung" onclick="hitungLuas();"><p/>
+        Hasil   : <input type="text" id="txtLuas" name="txtLuas"><p/>
+    </body>
+</html>
